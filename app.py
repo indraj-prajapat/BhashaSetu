@@ -47,7 +47,7 @@ app.layout = html.Div([
         rel='stylesheet',
         href='/assets/app_style.css'
     ),
-    
+
     # Main container
     html.Div([
         # Header
@@ -114,7 +114,7 @@ app.layout = html.Div([
                     dbc.Button("Close", id="close-modal", className="ms-auto", n_clicks=0)
                 ),
             ], id="result-modal-txt", is_open=False),
-            
+
             # Media input section
             html.Div([
                 # Audio section
