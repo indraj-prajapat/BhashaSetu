@@ -1,0 +1,66 @@
+/* Popup Base */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 102, 204, 0.6); /* translucent blue */
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Show popup */
+.popup-show {
+    display: flex;
+}
+
+/* Content inside popup */
+.popup-content {
+    padding: 30px;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.1); /* soft inner container if needed */
+}
+
+/* Animation Row */
+.animation-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.lottie-animation1,
+.lottie-animation2 {
+    width: 500px;
+    height: 300px;
+}
+
+/* Slide In Keyframes */
+@keyframes slideInLeft {
+    0% { transform: translateX(-100%); opacity: 0; }
+    100% { transform: translateX(0%); opacity: 1; }
+}
+
+@keyframes slideInRight {
+    0% { transform: translateX(100%); opacity: 0; }
+    100% { transform: translateX(0%); opacity: 1; }
+}
+
+.slide-in-left {
+    animation: slideInLeft 2.5s ease-out forwards;
+}
+.slide-in-right {
+    animation: slideInRight 2.5s ease-out forwards;
+}
+
+.hidden {
+    display: none;
+}
+
+.lottie-container-active {
+    display: block;
+}
